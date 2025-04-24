@@ -1,179 +1,83 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>AI for Academic Research</title>
-  <!--<link rel="stylesheet" href="style.css">-->
-  <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" rel="stylesheet">
-  <style>
-    body {
-      font-family: Arial, sans-serif;
-      margin: 0;
-      padding: 0;
-      background-color: #f4f4f4;
-    }
-    
-    .hero {
-      text-align: center;
-      padding: 2rem;
-      background-color: #007BFF;
-      color: white;
-    }
+<main class="container">
 
-   .navbar {
-      display: flex;
-      justify-content: center;
-      background-color: #333;
-      padding: 1rem;
-    }
-
-    .navbar a {
-      color: white;
-      padding: 0.5rem 1rem;
-      text-decoration: none;
-      text-align: center;
-    }
-
-    .navbar a:hover {
-      background-color: #575757;
-    }
-
-    .container {
-      display: flex;
-      flex-direction: column;
-      padding: 2rem;
-    }
-
-    section {
-      background: white;
-      border-radius: 8px;
-      box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
-      padding: 1.5rem;
-      transition: transform 0.2s;
-      margin-bottom: 1rem;
-    }
-
-    section:hover {
-      transform: scale(1.05);
-    }
-
-    .full-width {
-      width: 100%;
-    }
-
-    .row {
-      display: flex;
-      justify-content: space-between;
-      margin-bottom: 1rem;
-    }
-
-    .row > section {
-      flex: 1;
-      margin-right: 1rem;
-    }
-
-    .row > section:last-child {
-      margin-right: 0; /* Remove margin from the last item */
-    }
-
-    .third {
-      flex: 0 0 33%;
-    }
-
-    .half {
-      flex: 0 0 50%;
-    }
-
-    footer {
-      text-align: center;
-      padding: 1rem;
-      background-color: #333;
-      color: white;
-      position: relative;
-      bottom: 0;
-      width: 100%;
-    }
-  </style>
-</head>
-<body>
-  <header class="hero">
-    <h1>Using AI for Academic Research</h1>
-    <p>A guide to ethical and effective use of generative AI for academic research</p>
-  </header>
-
-  <nav class="navbar">
-    <a href="#getting-started"><i class="fas fa-play"></i> Getting Started</a>
-    <a href="#topic"><i class="fas fa-lightbulb"></i> Defining a Topic</a>
-    <a href="#search"><i class="fas fa-search"></i> Building a Search Strategy</a>
-    <a href="#sources"><i class="fas fa-search"></i> Finding Sources</a>
-    <a href="#analysis"><i class="fas fa-book-open"></i> Analyzing Sources</a>
-    <a href="#writing"><i class="fas fa-pen"></i> Writing & Citing</a>
-    <a href="#ethics"><i class="fas fa-scale-balanced"></i> Ethics</a>
-    <!--<a href="flowchart_prompts.html"><i class="fas fa-lightbulb"></i> Prompts Workflows</a>-->
+  <!-- Section Group Navigation -->
+  <nav class="navbar" style="margin-bottom: 1rem;">
+    <a href="#group1"><i class="fas fa-compass"></i> Start & Topic</a>
+    <a href="#group2"><i class="fas fa-search"></i> Search & Sources</a>
+    <a href="#group3"><i class="fas fa-stream"></i> Structure & Analyze</a>
+    <a href="#group4"><i class="fas fa-pen-nib"></i> Write & Ethics</a>
   </nav>
 
-  <main class="container">
-    <section id="welcome" class="full-width">
-      <h2>Welcome to the Legacy Library's resource guide to using AI for student research!</h2>
-      <p>This site is designed for students who want to learn how to integrate generative AI tools like ChatGPT, Claude, Perplexity, and Poe into their academic research process—responsibly and effectively.</p>
-    </section>
-
-    <div class="row">
-      <section id="getting-started" class="third">
-        <h2><a href="getting-started.html">Getting Started</a></h2>
-        <p>Understand what AI can and can't do in academic research. Learn where in the research process AI tools can support your work, and where human thinking and academic integrity are essential.</p>
+  <!-- Collapsible Section: Getting Started -->
+  <section id="group1" style="background-color: #e6f0ff; border-radius: 8px;">
+    <details open>
+      <summary><h2>🧭 Getting Started with AI in Research</h2></summary>
+      <section id="welcome" class="full-width">
+        <h3>Welcome</h3>
+        <p>This site is designed for students who want to learn how to integrate generative AI tools like ChatGPT, Claude, Perplexity, and Poe into their academic research process—responsibly and effectively.</p>
       </section>
+      <div class="row">
+        <section id="getting-started" class="third">
+          <h3><a href="getting-started.html"><i class="fas fa-play"></i> Getting Started</a></h3>
+          <p>Understand what AI can and can't do in academic research. Learn where in the research process AI tools can support your work, and where human thinking and academic integrity are essential.</p>
+        </section>
+        <section id="topic" class="third">
+          <h3><a href="topic.html"><i class="fas fa-brain"></i> Define a Topic</a></h3>
+          <p>Use AI tools to brainstorm research questions, narrow your focus, and explore angles you might not have considered.</p>
+        </section>
+      </div>
+    </details>
+  </section>
 
-      <section id="topic" class="third">
-        <h2><a href="topic.html">Define a Research Topic</a></h2>
-        <p>Use AI tools to brainstorm research questions, narrow down your focus, and explore angles you might not have considered.</p>
-      </section>
+  <!-- Collapsible Section: Searching -->
+  <section id="group2" style="background-color: #f0fff4; border-radius: 8px;">
+    <details>
+      <summary><h2>🔍 Search Strategies & Finding Sources</h2></summary>
+      <div class="row">
+        <section id="search" class="third">
+          <h3><a href="search.html"><i class="fas fa-search"></i> Search Strategy</a></h3>
+          <p>Learn to use AI to turn your research question into effective keywords and database search strategies.</p>
+        </section>
+        <section id="sources" class="third">
+          <h3><a href="sources.html"><i class="fas fa-folder-open"></i> Find Sources</a></h3>
+          <p>Use tools like Elicit, Perplexity, and ChatGPT to discover relevant articles—and when to switch to library databases.</p>
+        </section>
+      </div>
+    </details>
+  </section>
 
-      <section id="search" class="third">
-        <h2><a href="search.html">Building A Search Strategy with AI</a></h2>
-        <p>Learn to use AI to turn your research question into effective keywords and database search strategies.</p>
-      </section>
-    </div>
+  <!-- Collapsible Section: Analysis -->
+  <section id="group3" style="background-color: #fff7e6; border-radius: 8px;">
+    <details>
+      <summary><h2>🧠 Structuring & Analyzing Information</h2></summary>
+      <div class="row">
+        <section id="outline" class="third">
+          <h3><a href="outline_structure.html"><i class="fas fa-diagram-project"></i> Outline & Structure</a></h3>
+          <p>Use AI to plan your paper’s structure and section flow—saving time and clarifying your arguments early.</p>
+        </section>
+        <section id="analysis" class="third">
+          <h3><a href="analyze.html"><i class="fas fa-book-open-reader"></i> Analyze Articles</a></h3>
+          <p>AI can help summarize articles, explain academic jargon, and extract arguments. Use this section to level up your reading.</p>
+        </section>
+      </div>
+    </details>
+  </section>
 
-    <div class="row">
-      <section id="sources" class="third">
-        <h2><a href="sources.html">Finding Sources with AI</a></h2>
-        <p>Learn how to use tools like Elicit, Perplexity, and ChatGPT to discover relevant articles and books—and when to switch to library databases for credible academic sources.</p>
-      </section>
+  <!-- Collapsible Section: Writing & Ethics -->
+  <section id="group4" style="background-color: #fbeeff; border-radius: 8px;">
+    <details>
+      <summary><h2>✍️ Writing, Citing & Using AI Responsibly</h2></summary>
+      <div class="row">
+        <section id="writing" class="third">
+          <h3><a href="write.html"><i class="fas fa-pen-nib"></i> Writing & Citing</a></h3>
+          <p>Explore how to ethically use AI to plan, revise, and format your writing. Learn when (and how) to cite AI tools.</p>
+        </section>
+        <section id="ethics" class="third">
+          <h3><i class="fas fa-scale-balanced"></i> Ethics & Academic Integrity</h3>
+          <p>Understand your college’s guidelines for responsible AI use, and how to use these tools in a way that supports your learning.</p>
+        </section>
+      </div>
+    </details>
+  </section>
 
-      <section id="outline" class="third">
-        <h2><a href="outline_structure.html">Outline and Structure with AI</a></h2>
-        <p>Learn how to use tools like Elicit, Perplexity, and ChatGPT to discover relevant articles and books—and when to switch to library databases for credible academic sources.</p>
-      </section>
-      
-      <section id="analysis" class="third">
-        <h2><a href="analyze.html">Analyzing Articles</a></h2>
-        <p>AI can help summarize articles, explain academic jargon, and extract arguments. Use this section to level up your critical reading with AI support.</p>
-      </section>
-    </div>
-
-    <div class="row">
-      <section id="writing" class="third">
-        <h2><a href="write.html">Writing & Citing</a></h2>
-        <p>Explore how to ethically use AI to plan, revise, and format your writing. Learn when (and how) to cite AI tools.</p>
-      </section>
-
-      <section id="ethics" class="third">
-        <h2>Ethics & Academic Integrity</h2>
-        <p>Understand your college’s guidelines for responsible AI use, and how to make sure you're using these tools in a way that supports your learning—not replaces it.</p>
-      </section>
-
-      <!--Prompts workflows should be a feature of every main section; it shouldn't stand on its own-->
-      <!--<section id="prompts" class="third">
-        <h2><a href="flowchart_prompts.html">Prompts Workflows</a></h2>
-        <p>Explore various workflows for generating effective prompts using AI in your research process.</p>
-      </section>-->
-    </div>
-  </main>
-
-  <footer class="footer">
-    <p>&copy; 2025 Your Library | Designed for undergraduate research success</p>
-  </footer>
-</body>
-</html>
+</main>
