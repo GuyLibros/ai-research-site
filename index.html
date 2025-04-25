@@ -1,27 +1,82 @@
 <main class="container" style="font-family: Georgia, serif; color: #333; line-height: 1.6;">
 
+  <style>
+    summary {
+      cursor: pointer;
+      list-style: none;
+      margin-bottom: 1rem;
+    }
+
+    summary::marker {
+      font-size: 1.2rem;
+      color: #555;
+    }
+
+    .section-box {
+      background-color: #f9f9f9;
+      border-radius: 8px;
+      padding: 1.5rem;
+      margin-bottom: 2rem;
+    }
+
+    .section-box h2 {
+      display: inline;
+      margin: 0;
+    }
+
+    .row {
+      display: flex;
+      gap: 1.5rem;
+      flex-wrap: wrap;
+      margin-top: 1rem;
+    }
+
+    .third {
+      flex: 1;
+      min-width: 250px;
+    }
+
+    .navbar {
+      margin-bottom: 1.5rem;
+      background-color: #f8f9fa;
+      padding: 1rem;
+      border-radius: 8px;
+    }
+
+    .navbar a {
+      margin-right: 1.5rem;
+      text-decoration: none;
+      color: #0056b3;
+      font-weight: bold;
+    }
+
+    .navbar a:hover {
+      text-decoration: underline;
+    }
+  </style>
+
   <!-- Section Group Navigation -->
-  <nav class="navbar" style="margin-bottom: 1.5rem; background-color: #f8f9fa; padding: 1rem; border-radius: 8px;">
-    <a href="#group1" style="margin-right: 1.5rem;"><i class="fas fa-compass"></i> Getting Started</a>
-    <a href="#group2" style="margin-right: 1.5rem;"><i class="fas fa-search"></i> Search & Sources</a>
-    <a href="#group3" style="margin-right: 1.5rem;"><i class="fas fa-stream"></i> Structure & Analysis</a>
+  <nav class="navbar">
+    <a href="#group1"><i class="fas fa-compass"></i> Getting Started</a>
+    <a href="#group2"><i class="fas fa-search"></i> Search & Sources</a>
+    <a href="#group3"><i class="fas fa-stream"></i> Structure & Analysis</a>
     <a href="#group4"><i class="fas fa-pen-nib"></i> Writing & Ethics</a>
   </nav>
 
   <!-- Section: Getting Started -->
-  <section id="group1" style="background-color: #f9f9f9; border-left: 4px solid #0056b3; padding: 1.5rem; border-radius: 8px; margin-bottom: 2rem;">
+  <section id="group1" class="section-box" style="border-left: 4px solid #0056b3;">
     <details open>
       <summary><h2>Getting Started with Generative AI in Academic Research</h2></summary>
-      <section id="welcome" class="full-width">
+      <section id="welcome">
         <h3>Welcome</h3>
         <p>This guide is intended for students seeking to integrate generative AI tools—such as ChatGPT, Claude, Perplexity, and Poe—into the academic research process. Our emphasis is on responsible use and critical engagement.</p>
       </section>
-      <div class="row" style="display: flex; gap: 1.5rem; margin-top: 1rem;">
-        <section class="third" style="flex: 1;">
+      <div class="row">
+        <section class="third">
           <h3><a href="getting-started.html"><i class="fas fa-play"></i> Overview</a></h3>
           <p>Explore what generative AI tools are capable of, their limitations, and where they appropriately fit within the research lifecycle.</p>
         </section>
-        <section class="third" style="flex: 1;">
+        <section class="third">
           <h3><a href="topic.html"><i class="fas fa-brain"></i> Developing a Topic</a></h3>
           <p>Learn strategies to refine a research question and explore emerging directions through AI-supported brainstorming.</p>
         </section>
@@ -30,15 +85,15 @@
   </section>
 
   <!-- Section: Searching -->
-  <section id="group2" style="background-color: #f9f9f9; border-left: 4px solid #198754; padding: 1.5rem; border-radius: 8px; margin-bottom: 2rem;">
+  <section id="group2" class="section-box" style="border-left: 4px solid #198754;">
     <details>
       <summary><h2>Search Strategies & Source Evaluation</h2></summary>
-      <div class="row" style="display: flex; gap: 1.5rem; margin-top: 1rem;">
-        <section class="third" style="flex: 1;">
+      <div class="row">
+        <section class="third">
           <h3><a href="search.html"><i class="fas fa-search"></i> Formulating a Search</a></h3>
           <p>Translate your research topic into effective search terms and Boolean logic with AI assistance.</p>
         </section>
-        <section class="third" style="flex: 1;">
+        <section class="third">
           <h3><a href="sources.html"><i class="fas fa-folder-open"></i> Locating Sources</a></h3>
           <p>Compare AI search tools with academic databases to determine the most appropriate resource for your needs.</p>
         </section>
@@ -47,15 +102,15 @@
   </section>
 
   <!-- Section: Structuring & Analyzing -->
-  <section id="group3" style="background-color: #f9f9f9; border-left: 4px solid #fd7e14; padding: 1.5rem; border-radius: 8px; margin-bottom: 2rem;">
+  <section id="group3" class="section-box" style="border-left: 4px solid #fd7e14;">
     <details>
       <summary><h2>Organizing and Analyzing Scholarly Information</h2></summary>
-      <div class="row" style="display: flex; gap: 1.5rem; margin-top: 1rem;">
-        <section class="third" style="flex: 1;">
+      <div class="row">
+        <section class="third">
           <h3><a href="outline_structure.html"><i class="fas fa-diagram-project"></i> Outlining Your Argument</a></h3>
           <p>AI tools can assist in outlining papers, developing thesis statements, and identifying gaps in reasoning.</p>
         </section>
-        <section class="third" style="flex: 1;">
+        <section class="third">
           <h3><a href="analyze.html"><i class="fas fa-book-open-reader"></i> Critical Reading</a></h3>
           <p>Use AI to summarize dense readings, define complex terms, and extract central arguments.</p>
         </section>
@@ -64,15 +119,15 @@
   </section>
 
   <!-- Section: Writing & Ethics -->
-  <section id="group4" style="background-color: #f9f9f9; border-left: 4px solid #6f42c1; padding: 1.5rem; border-radius: 8px;">
+  <section id="group4" class="section-box" style="border-left: 4px solid #6f42c1;">
     <details>
       <summary><h2>Writing, Citing, and Academic Integrity</h2></summary>
-      <div class="row" style="display: flex; gap: 1.5rem; margin-top: 1rem;">
-        <section class="third" style="flex: 1;">
+      <div class="row">
+        <section class="third">
           <h3><a href="write.html"><i class="fas fa-pen-nib"></i> Writing & Citing with AI</a></h3>
           <p>Understand how AI can support the writing process, including drafting, editing, and formatting. Learn how to cite AI appropriately.</p>
         </section>
-        <section class="third" style="flex: 1;">
+        <section class="third">
           <h3><i class="fas fa-scale-balanced"></i> Upholding Academic Ethics</h3>
           <p>Review institutional guidelines and best practices for responsible AI use in academic work, focusing on transparency and intellectual honesty.</p>
         </section>
